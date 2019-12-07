@@ -1,0 +1,10 @@
+task hello {
+	doLast(){
+	println "Helo Word"
+	}
+}
+task whoiam(dependsOn: hello){
+	doLast(){
+	println "I am Gradle"
+	}
+}
