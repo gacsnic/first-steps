@@ -1,10 +1,17 @@
-task hello {
-	doLast(){
-	println "Helo Word"
+task hw { 
+	doLast(){ 
+		println "Helo Word"
 	}
 }
-task whoiam(dependsOn: hello){
+task whoAmI {
 	doLast(){
-	println "I am Gradle"
+		println "I am Gradle"
+	}
+}
+
+task B(dependsOn :['whoAmI','hw']){
+
+	doLast(){
+	println "Yo soy el utlimo en ejecutar"
 	}
 }
