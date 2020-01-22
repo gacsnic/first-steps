@@ -1,7 +1,5 @@
 package ni.gacssoft.mygui
 import groovy.swing.SwingBuilder 
-import java.awt.BorderLayout
-import javax.swing.BorderFactory
 
 class App {
 
